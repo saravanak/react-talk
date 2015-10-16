@@ -164,7 +164,7 @@ easier to reason about than traditional data binding.
 --
 
 [Basic
-Props](/react-properties/defining-properties-jsx.html)
+Props](./react-properties/defining-properties-jsx.html)
 
 --
 
@@ -255,7 +255,7 @@ http://blog.reverberate.org/2014/02/react-demystified.html
 
 ---
 [Balmer
-Peak](/react-properties/react-0.8.0/examples/ballmer-peak/)
+Peak](./react-properties/react-0.8.0/examples/ballmer-peak/)
 
 --
 
