@@ -399,7 +399,6 @@ left: pos * 128,
         }
 ```
 ---
-<<<<<<< 91b758843b24b69b46a1759d4db791da1a8442a4
 ## states and props : differences
 
 State has data that you own. Props has data that you borrow.
@@ -434,8 +433,6 @@ app. Flux is an enabler here.
 
 ---
 
-||||||| merged common ancestors
-=======
 ## Other examples in the ppt
 
 [example](./react-properties/react-0.8.0/examples/)
@@ -443,7 +440,41 @@ app. Flux is an enabler here.
 [source for memory game](https://github.com/saravanak/slingmemory)
 
 ---
->>>>>>> Update for #2 session
+
+## states and props : differences
+
+State has data that you own. Props has data that you borrow.
+
+--
+
+You can change your own data. 
+
+--
+
+you have to ask someone else to change your props.
+
+
+Testing react views : show our snippet.
+---
+##One way binding
+
+Dependency tracking is complex.
+Finding side effects in two way bound code is nightmarish.
+--
+
+See 00:40:00 of the video
+
+--
+
+One way binding == state machine pattern, you know what exactly happens in your
+app. Flux is an enabler here.
+
+--
+
+ [http://staal.io/blog/2014/02/05/2-way-data-binding-under-the-microscope/]
+
+---
+
 ## In the wild
 
 https://github.com/fedosejev/shopping-list-react/
