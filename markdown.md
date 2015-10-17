@@ -56,6 +56,15 @@ denomintator's aspirations.
 - Tooling is NOT covered but is important!
 
 ---
+## Outcome
+
+you should go back with good memories of the talk 
+
+--
+
+and be empowered to try out some stuff in react.
+
+---
 
 
 # Introduction
@@ -124,11 +133,10 @@ denomintator's aspirations.
     - Form validation semantics
 
 
-[ From the Horses' mouth ]( https://facebook.github.io/react/ )
-
 ---
 
 # What else is React?
+[ From the Horses' mouth ]( https://facebook.github.io/react/ )
 
 **JUST THE UI**
 
@@ -249,11 +257,13 @@ boilerplate and is easier to reason about than traditional data binding.”
 [source](http://webtech-cs294.tumblr.com/post/110530653639/react-a-simple-approach-to-reactive-programming)
 
 ---
+
 ## Revision time
 
 http://blog.reverberate.org/2014/02/react-demystified.html
 
 ---
+
 [Balmer
 Peak](./react-properties/react-0.8.0/examples/ballmer-peak/)
 
@@ -318,6 +328,40 @@ left: pos * 128,
         }
 ```
 ---
+## states and props : differences
+
+State has data that you own. Props has data that you borrow.
+
+--
+
+You can change your own data. 
+
+--
+
+you have to ask someone else to change your props.
+
+
+Testing react views : show our snippet.
+---
+##One way binding
+
+Dependency tracking is complex.
+Finding side effects in two way bound code is nightmarish.
+--
+
+See 00:40:00 of the video
+
+--
+
+One way binding == state machine pattern, you know what exactly happens in your
+app. Flux is an enabler here.
+
+--
+
+ [http://staal.io/blog/2014/02/05/2-way-data-binding-under-the-microscope/]
+
+---
+
 ## In the wild
 
 https://github.com/fedosejev/shopping-list-react/
@@ -349,6 +393,18 @@ https://github.com/uberVU/react-guide/blob/master/props-vs-state.md
 Dont miss this one if you need to know the internals:
 
 http://jlongster.com/Removing-User-Interface-Complexity,-or-Why-React-is-Awesome
+
+---
+
+General web stuff
+
+--
+
+[https://frontendmasters.gitbooks.io/]
+
+--
+
+[https://remysharp.com/2015/10/14/the-art-of-debugging]
 
 ---
 
