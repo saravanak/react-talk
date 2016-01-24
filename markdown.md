@@ -46,14 +46,64 @@ As we are here to learn about stuff.
 I will try to explain the basics of React. This is to cover the greatest common
 denomintator's aspirations. 
 
---
-
-..but if you think about it deeply, thats all there is in React!
 
 --
 
 - Advanced concepts are NOT covered
 - Tooling is NOT covered but is important!
+
+--
+
+..but if you think about it deeply, thats all there is in React!
+---
+# Javascript - Recap 
+
+## Simple DOM creation using javascript
+
+--
+
+```javascript
+var img = document.createElement('IMG');
+img.setAttribute('src', 'delete.gif');
+img.onclick = function(){
+  removeContact(tr);
+}
+td1.appendChild(img);
+```
+---
+
+## Simple 2 way binding in javscript
+
+ - Uses pubsub model, using the jquery $({}) object.
+  [Example](./Easy 2 way binding.pdf)
+
+---
+# advtantages of two way binding
+
+--
+
+This is a very solid concept to build a web application on top of, because it
+makes the "Model" abstraction a safe, atomic data source to use everywhere
+within the application. Say, if a model, bound to a view, changes, then its
+matching piece of UI (the view) will reflect that, no matter what. And the
+matching piece of UI (the view) can safely be used as a mean of collecting user
+inputs/data, so as to maintain the application data up-to-date.[1]
+
+[1] - http://stackoverflow.com/questions/13504906/what-is-two-way-binding
+
+---
+# problems of two way bindings
+
+--
+
+with large scale
+
+They're bad because it makes it too hard to reason about. With one way data flow
+(and especially using something like Redux and Immutable.js), you know much more
+clearly what's happening in your application. Also check out Christian Alfoni's
+Cerebral for further evolution of this[1]
+
+[1] - https://www.reddit.com/r/reactjs/comments/3mn9cf/why_is_localized_state_and_twoway_binding_a_bad/
 
 ---
 
@@ -82,13 +132,13 @@ denomintator's aspirations.
   render([post[comments]]) = blog
   render([cat_data]) = cat profile page
   ```
-
 --
 
   ```javascript
   render([post]) = blog edit page
   render([cat_data]) = cat profile edit page
   ```
+
 ---
 
 # So, what is a model?
@@ -128,6 +178,24 @@ denomintator's aspirations.
 
 ---
 
+## Question
+
+  Can you identify the model here?
+
+--
+
+  ```javascript
+  var img = document.createElement('IMG');
+  img.setAttribute('src', 'delete.gif');
+  img.onclick = function(){
+    removeContact(tr);
+  }
+  td1.appendChild(img);
+  ```
+--
+  **Is this static or dynamic?**
+---
+
 # What else is React?
 
 **JUST THE UI**
@@ -163,8 +231,7 @@ easier to reason about than traditional data binding.
 
 --
 
-[Basic
-Props](/react-properties/defining-properties-jsx.html)
+[Basic Props](/react-properties/defining-properties-jsx.html)
 
 --
 
@@ -290,6 +357,10 @@ var BallmerPeakCalculator = React.createClass({
 ```
 
 ---
+class: center, middle
+background-image: url(./immutable_state.png)
+http://stackoverflow.com/questions/28032173/reactjs-whats-the-real-world-use-of-immutability-helpers-in-react
+---
 ## Animation
 
 [Again a state
@@ -317,6 +388,13 @@ left: pos * 128,
           }
         }
 ```
+---
+## Other examples in the ppt
+
+[example](./react-properties/react-0.8.0/examples/)
+[memorygame](./slingshot/dist/)
+[source for memory game](https://github.com/saravanak/slingmemory)
+
 ---
 ## In the wild
 
