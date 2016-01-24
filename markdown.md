@@ -55,6 +55,16 @@ denomintator's aspirations.
 --
 
 ..but if you think about it deeply, thats all there is in React!
+
+---
+## Outcome
+
+you should go back with good memories of the talk 
+
+--
+
+and be empowered to try out some stuff in react.
+
 ---
 # Javascript - Recap 
 
@@ -70,50 +80,6 @@ img.onclick = function(){
 }
 td1.appendChild(img);
 ```
----
-
-## Simple 2 way binding in javscript
-
- - Uses pubsub model, using the jquery $({}) object.
-  [Example](./Easy 2 way binding.pdf)
-
----
-# advtantages of two way binding
-
---
-
-This is a very solid concept to build a web application on top of, because it
-makes the "Model" abstraction a safe, atomic data source to use everywhere
-within the application. Say, if a model, bound to a view, changes, then its
-matching piece of UI (the view) will reflect that, no matter what. And the
-matching piece of UI (the view) can safely be used as a mean of collecting user
-inputs/data, so as to maintain the application data up-to-date.[1]
-
-[1] - http://stackoverflow.com/questions/13504906/what-is-two-way-binding
-
----
-# problems of two way bindings
-
---
-
-with large scale
-
-They're bad because it makes it too hard to reason about. With one way data flow
-(and especially using something like Redux and Immutable.js), you know much more
-clearly what's happening in your application. Also check out Christian Alfoni's
-Cerebral for further evolution of this[1]
-
-[1] - https://www.reddit.com/r/reactjs/comments/3mn9cf/why_is_localized_state_and_twoway_binding_a_bad/
-
----
-## Outcome
-
-you should go back with good memories of the talk 
-
---
-
-and be empowered to try out some stuff in react.
-
 ---
 
 
@@ -323,6 +289,60 @@ boilerplate and is easier to reason about than traditional data binding.”
 </blockquote>
 [source](http://webtech-cs294.tumblr.com/post/110530653639/react-a-simple-approach-to-reactive-programming)
 
+---
+
+## Question
+
+  Can you identify the bindings here?
+
+--
+
+  ```javascript
+  var img = document.createElement('IMG');
+  img.setAttribute('src', 'delete.gif');
+  img.onclick = function(){
+    removeContact(tr);
+  }
+  td1.appendChild(img);
+  ```
+--
+  **Is this oneway or twoway?**
+
+---
+## Simple 2 way binding in javscript
+
+ - Uses pubsub model, using the jquery $({}) object.
+  [Example](./Easy 2 way binding.pdf)
+
+---
+# advtantages of two way binding
+
+--
+
+This is a very solid concept to build a web application on top of, because it
+makes the "Model" abstraction a safe, atomic data source to use everywhere
+within the application. Say, if a model, bound to a view, changes, then its
+matching piece of UI (the view) will reflect that, no matter what. And the
+matching piece of UI (the view) can safely be used as a mean of collecting user
+inputs/data, so as to maintain the application data up-to-date.[1]
+
+[1] - http://stackoverflow.com/questions/13504906/what-is-two-way-binding
+
+---
+# problems of two way bindings
+
+--
+
+with large scale
+
+They're bad because it makes it too hard to reason about. With one way data flow
+(and especially using something like Redux and Immutable.js), you know much more
+clearly what's happening in your application. Also check out Christian Alfoni's
+Cerebral for further evolution of this[1]
+
+[1] - https://www.reddit.com/r/reactjs/comments/3mn9cf/why_is_localized_state_and_twoway_binding_a_bad/
+
+---
 ---
 
 ## Revision time
