@@ -66,7 +66,24 @@ you should go back with good memories of the talk
 and be empowered to try out some stuff in react.
 
 ---
-# Javascript - Recap 
+## Javascript - Recap 
+
+``` javascript
+var cat ={ name:'mickey', color:'blue'}
+for (x in cat) console.log(x); console.log(cat[x]);
+```
+--
+``` javascript
+cat[spouse] = "minney";
+```
+--
+Is this right?
+--
+
+``` javascript
+cat['spouse'] = "minney";
+```
+---
 
 ## Simple DOM creation using javascript
 
